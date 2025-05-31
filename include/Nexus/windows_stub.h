@@ -1,0 +1,10 @@
+typedef void *HWND;
+typedef unsigned int UINT;
+typedef unsigned long WPARAM;
+typedef long LPARAM;
+typedef void *LPVOID;
+typedef void *HMODULE;
+typedef long LRESULT;
+typedef unsigned long size_t;
+typedef int BOOL;
+typedef unsigned long DWORD;
