@@ -1,11 +1,12 @@
 .{
-    .name = "nexus-zig",
+    .name = .nexus_zig,
     .version = "0.1.0",
-    .minimum_zig_version = "0.13.0",
+    .minimum_zig_version = "0.14.0",
     .paths = .{
         "src",
         "build.zig",
         "build.zig.zon",
         "README.md",
     },
+    .fingerprint = 0x7d58ae01fe5c42fb,
 }
