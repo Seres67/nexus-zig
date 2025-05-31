@@ -10,7 +10,7 @@ pub fn build(b: *std.Build) void {
     });
     const optimize = b.standardOptimizeOption(.{});
 
-    _ = b.addModule("nexus-zig", .{
+    _ = b.addModule("nexus_zig", .{
         .root_source_file = .{ .src_path = .{ .owner = b, .sub_path = "src/nexus.zig" } },
         .target = target,
         .optimize = optimize,
