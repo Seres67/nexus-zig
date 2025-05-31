@@ -10,11 +10,9 @@ pub fn build(b: *std.Build) void {
     });
     const optimize = b.standardOptimizeOption(.{});
 
-    const module = b.addModule("nexus-zig", .{
-        .root_source_file = .{ .cwd_relative = "src/main.zig" },
+    _ = b.addModule("nexus-zig", .{
+        .root_source_file = .{ .src_path = .{ .owner = b, .sub_path = "src/nexus.zig" } },
         .target = target,
         .optimize = optimize,
     });
-
-    b.installArtifact(module);
 }
